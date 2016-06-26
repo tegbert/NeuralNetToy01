@@ -9,12 +9,14 @@ http://keras.io
 *Read, scale up, and save PNG image data x4 in numpy and scipy*
 http://stackoverflow.com/questions/7525214/how-to-scale-a-numpy-array
 
-    import numpy as np
-    from scipy.misc import imread, imsave
-    img = imread('myimage.png')
-    n = 4
-    imgx4 = np.kron(img, np.ones((n,n)))
-    imsave('myimagex4.png', imgx4)
+```python
+import numpy as np
+from scipy.misc import imread, imsave
+img = imread('myimage.png')
+n = 4
+imgx4 = np.kron(img, np.ones((n,n)))
+imsave('myimagex4.png', imgx4)
+```
 
 *Movie Making*
 
